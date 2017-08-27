@@ -97,7 +97,7 @@ public class ShapeMaker {
          * * * *
         * * * * *
      */
-    public static String PrintEquilateralTriangle(int sideLength)
+    public static String PrintEquilateralTriangle(int height)
     {
         // write your code here
 

@@ -63,6 +63,10 @@ public class BankAccount {
     to the account balance.
 
     Interest added = account balance * number of years * interest rate
+
+    Error messages:
+    "Sorry, the number of years must be an integer greater than 0."
+    "Sorry, the interest rate must be greater than 0."
      */
     public void AddInterest(int numYears, double interestRate)
     {
