@@ -1,13 +1,18 @@
-/**
- * Created by hagotur on 7/24/2017.
- */
+import java.util.Scanner;
+
 public class Shapes {
     public static void main(String[] args) {
-        System.out.println(ShapeMaker.PrintSquare(5));
-        System.out.println(ShapeMaker.PrintRectangle(5, 4));
-        System.out.println(ShapeMaker.PrintRightTriangle(5));
-        System.out.println(ShapeMaker.PrintInvertedRightTriangle(5));
-        System.out.println(ShapeMaker.PrintBackwardsRightTriangle(5));
-        System.out.println(ShapeMaker.PrintEquilateralTriangle(5));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a length: ");
+        int length = scanner.nextInt();
+        System.out.print("Enter a height: ");
+        int height = scanner.nextInt();
+
+        System.out.println(ShapeMaker.PrintSquare(length));
+        System.out.println(ShapeMaker.PrintRectangle(length, height));
+        System.out.println(ShapeMaker.PrintRightTriangle(height));
+        System.out.println(ShapeMaker.PrintInvertedRightTriangle(height));
+        System.out.println(ShapeMaker.PrintBackwardsRightTriangle(height));
+        System.out.println(ShapeMaker.PrintEquilateralTriangle(height));
     }
 }

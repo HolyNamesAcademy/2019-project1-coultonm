@@ -1,6 +1,4 @@
-/**
- * Created by hagotur on 7/24/2017.
- */
+
 public class ShapeMaker {
     /*
     Prints a square with sides of size "size". If size = 5, the square looks like this:
@@ -34,7 +32,7 @@ public class ShapeMaker {
         * * * * *
         * * * * *
      */
-    public static String PrintRectangle(int length, int width)
+    public static String PrintRectangle(int length, int height)
     {
         // write your code here
 

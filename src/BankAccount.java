@@ -1,9 +1,7 @@
-/**
- * Created by hagotur on 7/24/2017.
- */
+
 public class BankAccount {
-    String userName;
-    double accountBalance;
+    private String userName;
+    private double accountBalance;
 
     /*
     Initialize the bank account.

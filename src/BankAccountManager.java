@@ -30,7 +30,7 @@ public class BankAccountManager {
             String command = input.next().toLowerCase();
             switch (command)
             {
-                case "seebalance":
+                case "balance":
                     // Do nothing, the balance will get printed at the end anyway
                     break;
                 case "deposit":
