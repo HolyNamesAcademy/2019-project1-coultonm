@@ -8,13 +8,15 @@ Getting started
 
 The Project
 -----
-This project has two parts. The first part is called ShapeMaker. In ShapeMaker, you will implement functions that print out shapes using the '*' symbol and whitespace. It will be a good exercise to warm up your for loops and if statements. The second part is called BankAccountManager. The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account.
+This project has two parts. The first part is called ShapeMaker. In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespace. It will be a good exercise to warm up your for loops and if statements. The second part is called BankAccountManager. The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account.
 
 ShapeMaker
 -----
 In order to run ShapeMaker, click on the dropdown next to the play button in the top right and select "ShapeMaker". Then hit play. Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
 
-All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. Important: part of the problem is getting the whitespaces right. Don't have extra spaces at the end of the line if they are not needed.
+All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. 
+
+**Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit.
 
 Start by implementing the first function. Then hit play and see the program run, and see if you implemented it properly. If you get it right, move onto the next function. Otherwise, make whatever corrections you need to make and run it again. I recommend running the program very often. That will allow you to make sure you are on the right track. You should absolutely be running it after each function that you implement.
 
@@ -27,7 +29,7 @@ The BankAccountManager is a command line application that allows you to maintain
 | Balance |	Prints the name and account balance. |
 | Deposit <amount> ("Deposit 43") |	Deposit takes in a dollar amount and adds it to the account balance. |
 | Withdraw <amount> ("Withdraw 13") |	Withdraw takes in a dollar amount and subtracts it from the account balance, as long as there is enough money in the account. Otherwise, it just prints an error message to the user. |
-| AddInterest <num years> <interest rate> ("AddInterest 2 .05") |	Takes in a number of years and an interest rate and calculates the new balance with interest added. For our purposes, we're just using simple interest (Interest = Balance * Time * Rate and New Balance = Old Balance + Interest). |
+| AddInterest <num years> <interest rate> ("AddInterest 2 .05") |	Takes in a number of years and an interest rate and calculates the new balance with interest added. For our purposes, we're just using simple interest (Interest = Balance \* Time \* Rate and New Balance = Old Balance + Interest). |
 | Quit |	Exits the program. |
 
 Your job is to implement the BankAccount class so that it keeps track of the name and account balance. You will have to implement the constructor, a couple of getters, and a couple of methods. All of those methods can be found in the BankAccount class. You will also have to implement "PrintAccountInfo" function, located in BankAccountManager.
