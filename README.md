@@ -2,9 +2,15 @@ Project 1
 =========
 Getting started
 -----
-1. Save and unzip project to where you want your project to live
-2. Open IntelliJ and click File > Open. Find the root level folder of your project. This is the folder that contains the .idea folder. Click on this folder and select OK.
-3.  You should see 'ShapeMaker' in a dropdown and a play button next to it. Hit the play button to run your program. Since you haven't written any code, the program won't work as intended -- yet. But being able to run the program means you are all set and ready to start.
+Go to the [IntelliJ Setup Page](https://holynamesseattle-my.sharepoint.com/personal/ecudaback_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fecudaback_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%20P7%2017-18&wd=target%28_Content%20Library%2FUsing%20the%20Content%20Library.one%7CAF912239-6A74-48A4-BA23-3D819CB96383%2FIntelliJ%20Setup%7CEA8F2C82-E1EE-459F-8521-D24F0460F650%2F%29) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions under "Getting Started With The First Assignment".
+
+1. Go to this link:  https://classroom.github.com/a/9EhOlYCR and accept the assignment. It should take you to your project page. (If it doesn't, click on the link above again, and click on the link to the project page).
+2. On the GitHub project page, click on the green "Clone or Download" button and copy the link.
+3. Open Intellij, click on the "Checkout from Version Control" drop down and select "GitHub"
+4. On the next page paste the link you copied into the "Git Repository URL" box. 
+5. Click Clone. You may have to enter your GitHub username and password.
+6. If it asks you whether you want to open the project or not, select yes.
+7. You should see your project open. If you need to reopen the project, you should see it under "File > Open Recent"
 
 The Project
 -----
@@ -16,7 +22,7 @@ In order to run ShapeMaker, click on the dropdown next to the play button in the
 
 All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. 
 
-**Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit.
+**Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
 
 Start by implementing the first function. Then hit play and see the program run, and see if you implemented it properly. If you get it right, move onto the next function. Otherwise, make whatever corrections you need to make and run it again. I recommend running the program very often. That will allow you to make sure you are on the right track. You should absolutely be running it after each function that you implement.
 
@@ -36,7 +42,7 @@ Your job is to implement the BankAccount class so that it keeps track of the nam
 
 Unit Tests
 -----
-You'll notice that there are also 2 other configs in the dropdown by the play button. These are 'ShapeMakerTest' and 'BankAccountTest'. These two configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. 
+You'll notice that there are also 3 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', and 'ShapeMakerExtraCreditTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
 Turning In The Project
 -----
