@@ -75,9 +75,9 @@ Grading Rubric
 | [Descriptive variable names](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables) | 5 pts |
 | Reasonable breakdown of packages and classes | N/A |
 | [Single-Responsibility Principle (methods and classes do one thing)](http://www.oodesign.com/single-responsibility-principle.html) | N/A |
-| <h3>Administrivia</h3> | <h3>20 pts</h3> |
+| <h3>Administrative</h3> | <h3>20 pts</h3> |
 | Correctly pushed to GitHub | 5 pts |
 | Turned in on time | 15 pts |
 | <h3>Extra Credit</h3> | <h3>10 pts</h3> |
 | No extra spaces at the end of the line | 10 pts |
-| <h3>Total</h3> | <h3>120 pts</h3> |
+| <h3>Total</h3> (not including extra credit) | <h3>110 pts</h3> |
