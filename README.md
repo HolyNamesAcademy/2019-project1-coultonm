@@ -1,5 +1,16 @@
 Project 1
 =========
+
+Good work pledge
+-----
+We are here to broaden your exposure to Computer Science. We can only achieve that purpose when you work hard and honestly. It may be tempting to copy-paste code from a classmate, or let a classmate do all your work for you—don't! You will be cheating yourself from the most valuable thing course has to offer—overcoming challenges.
+
+We know that hard, and honest work doesn't come easily. If you feel like you are falling behind
+
+1. Don't copy-paste code, or let someone do your work for you
+2. Ask for help!
+3. Tell the teaching-team you need more time 
+
 Getting started
 -----
 Go to the [IntelliJ Setup Page](https://holynamesseattle-my.sharepoint.com/personal/ecudaback_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fecudaback_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%20P7%2017-18&wd=target%28_Content%20Library%2FUsing%20the%20Content%20Library.one%7CAF912239-6A74-48A4-BA23-3D819CB96383%2FIntelliJ%20Setup%7CEA8F2C82-E1EE-459F-8521-D24F0460F650%2F%29) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions under "Getting Started With The First Assignment".
