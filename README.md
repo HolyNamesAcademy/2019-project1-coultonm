@@ -55,6 +55,19 @@ Unit Tests
 -----
 You'll notice that there are also 3 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', and 'ShapeMakerExtraCreditTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
+Bonus Assignment
+-----
+Before you work on the bonus assignment, make sure you commit and push, so you don't accidentally break your program for the rest of the assignment. Modify BankAccountManager to support two more commands:
+
+| Command	| Description |
+| ------- | ----------- |
+| AddUser <name> <balance> ("AddUser John 40") |	First check if an account already exists with the given name. If it does, print an error such as "Sorry, that user already exists. Please pick a new name". If there is no account with that name, then create a new account with that name and balance. |
+| SwitchUser <name> ("SwitchUser John") | If the user doesn't exist, print an error ("Sorry, that user doesn't exist. Please create an account for that user first."). Switch the current bank account to the account specified. Once you switch users all of the other commands apply to the new user (Balance shows the new user's balance). For example, if the current account name is "Amy", and the input is "SwitchUser John", first check if the account exists. If it does, set it as the current account. Now when the user inputs "Deposit 10", it will add 10 to John's account. |
+
+In order to support this functionality, you will need to keep track of and store all of the bank accounts. To do that, you will need to use an ArrayList. Whenever you create a new bank account object, you will need to add the bank accounts to this array. You'll need to do this in two places: when you create the first account and when you call "AddUser". When "SwitchUser" is called, you will need to switch the current account to the new account that is specified. You should create a helper function to go through the array and return the account with a given name. 
+
+**Note:** You should not do this in the BankAccount class. In our program, each class has a responsibility. BankAccount has the responsibility to do all operations associated with a single BankAccount. BankAccountManager has the responsibility to tell the BankAccount objects what to do (this includes creating them, storing them, and telling them to deposit or withdraw). So we should be creating the ArrayList and adding all of the new functionality in our BankAccountManager class, and using that to store and fetch BankAccounts. FYI, this isn't the only way to design this program, but it's the way I chose to design it. 
+
 Committing your Changes and Turning In The Project
 -----
 The same instructions with screenshots are in the OneNote [here](https://holynamesseattle-my.sharepoint.com/personal/ecudaback_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fecudaback_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%20P7%2017-18&wd=target%28_Content%20Library%2FUsing%20the%20Content%20Library.one%7CAF912239-6A74-48A4-BA23-3D819CB96383%2FIntelliJ%20Setup%7CEA8F2C82-E1EE-459F-8521-D24F0460F650%2F%29).
