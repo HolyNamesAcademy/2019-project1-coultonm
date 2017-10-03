@@ -87,21 +87,21 @@ You can commit and push ("push" means send it to GitHub.com to save it there) by
 
 Grading Rubric
 -----
-
-| <h3>Units Tests</h3>| <h3>55 pts</h3>|
-| :----------- | ------:|
-| BankAccount Tests (5 pts * 5 tests) | 25 pts |
-| ShapeMaker Tests (5 pts * 6 tests)| 30 pts |
-| <h3>Code Quality</h3> | <h3>35 pts</h3> |
-| No compile errors | 12 pts |
-| [Responsible error handling](https://beginnersbook.com/2013/04/try-catch-in-java) <!--More advanced guide: https://stackify.com/best-practices-exceptions-java--> | 6 pts |
-| [Code spaced and indented properly](https://stackoverflow.com/questions/17879475/how-enable-auto-format-code-for-intellij-idea) | 12 pts |
-| [Descriptive variable names](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables) | 5 pts |
-| Reasonable breakdown of packages and classes | N/A |
-| [Single-Responsibility Principle (methods and classes do one thing)](http://www.oodesign.com/single-responsibility-principle.html) | N/A |
-| <h3>Administrative</h3> | <h3>20 pts</h3> |
-| Correctly pushed to GitHub | 5 pts |
-| Turned in on time | 15 pts |
-| <h3>Extra Credit</h3> | <h3>10 pts</h3> |
-| No extra spaces at the end of the line | 10 pts |
-| <h3>Total</h3> (not including extra credit) | <h3>110 pts</h3> |
+| | <h4>Points possible</h4>| <h4>Earned points</h4>|
+| :----------- |---|------:|
+| <h3>Units Tests</h3>| <h3>55 pts</h3>| |
+| BankAccount Tests (5 pts * 5 tests) | 25 pts | |
+| ShapeMaker Tests (5 pts * 6 tests)| 30 pts | |
+| <h3>Code Quality</h3> | <h3>35 pts</h3> | |
+| No compile errors | 12 pts | |
+| [Responsible error handling](https://beginnersbook.com/2013/04/try-catch-in-java) <!--More advanced guide: https://stackify.com/best-practices-exceptions-java--> | 6 pts | |
+| [Code spaced and indented properly](https://stackoverflow.com/questions/17879475/how-enable-auto-format-code-for-intellij-idea) | 12 pts | |
+| [Descriptive variable names](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables) | 5 pts | |
+| Reasonable breakdown of packages and classes | N/A | |
+| [Single-Responsibility Principle (methods and classes do one thing)](http://www.oodesign.com/single-responsibility-principle.html) | N/A | |
+| <h3>Administrative</h3> | <h3>20 pts</h3> | |
+| Correctly pushed to GitHub | 5 pts | |
+| Turned in on time | 15 pts | |
+| <h3>Extra Credit</h3> | <h3>10 pts</h3> | |
+| No extra spaces at the end of the line | 10 pts | |
+| <h3>Total</h3> (including extra credit) | <h3>110 pts</h3> | |
