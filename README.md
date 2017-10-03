@@ -104,4 +104,4 @@ Grading Rubric
 | Turned in on time | 15 pts | |
 | <h3>Extra Credit</h3> | <h3>10 pts</h3> | |
 | No extra spaces at the end of the line | 10 pts | |
-| <h3>Total</h3> (including extra credit) | <h3>110 pts</h3> | |
+| <h3>Total (excluding extra credit)</h3>  | <h3>110 pts</h3> | |
