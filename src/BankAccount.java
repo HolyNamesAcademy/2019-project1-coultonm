@@ -1,3 +1,4 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class BankAccount {
     private String userName;
@@ -9,7 +10,7 @@ public class BankAccount {
     public BankAccount(String in_userName, double in_accountBalance)
     {
         // write your code here
-
+        throw new NotImplementedException();
     }
 
     /*
@@ -18,8 +19,7 @@ public class BankAccount {
     public String GetName()
     {
         // write your code here
-
-        return "";
+        throw new NotImplementedException();
     }
 
     /*
@@ -28,8 +28,7 @@ public class BankAccount {
     public double GetBalance()
     {
         // write your code here
-
-        return 0;
+        throw new NotImplementedException();
     }
 
     /*
@@ -37,11 +36,13 @@ public class BankAccount {
     If the number is not positive, the function does nothing except printing the following string:
 
     "Sorry, the amount deposited must be greater than 0."
+
+    Returns the amount deposited. If there is an error, the amount deposited is 0.
      */
-    public void Deposit(double amount)
+    public double Deposit(double amount)
     {
         // write your code here
-
+        throw new NotImplementedException();
     }
 
     /*
@@ -51,11 +52,13 @@ public class BankAccount {
 
     "Sorry, the amount withdrawn must be greater than 0."
     "Sorry, you cannot withdraw more than the account balance."
+
+    Returns the amount withdrawn. If there is an error, the amount withdrawn is 0.
      */
-    public void Withdraw(double amount)
+    public double Withdraw(double amount)
     {
         // write your code here
-
+        throw new NotImplementedException();
     }
 
     /*
@@ -67,11 +70,12 @@ public class BankAccount {
     Error messages:
     "Sorry, the number of years must be an integer greater than 0."
     "Sorry, the interest rate must be greater than 0."
+    Returns the amount of interest added. If there is an error, the amount added is 0.
      */
-    public void AddInterest(int numYears, double interestRate)
+    public double AddInterest(int numYears, double interestRate)
     {
         // write your code here
-
+        throw new NotImplementedException();
     }
 
 
