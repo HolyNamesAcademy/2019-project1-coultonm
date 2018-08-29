@@ -175,10 +175,25 @@ public class ArrayListPracticeTest {
     }
 
     @Test
-    public static String GetTeamsString(ArrayList<ArrayList<Student>> teams) {
+    public static String GetTeamsString() {
+        // Arrange
+        ArrayList<ArrayList<Student>> teams = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            ArrayList<Student> team = CreateStudentArrayList();
+            teams.add(team);
+        }
+        String output =
+               "Emily Joshua Jessica Michael Daniel Madison\n" +
+               "Emily Joshua Jessica Michael Daniel Madison\n" +
+               "Emily Joshua Jessica Michael Daniel Madison\n" +
+               "Emily Joshua Jessica Michael Daniel Madison\n";
 
-        // write your code above and remove the line below
-        throw new NotImplementedException();
+
+        // Act
+        Student actual = ArrayListPractice.GetTallestStudent(students);
+
+        // Assert
+        assertEquals(expected, actual);
     }
 
     @Test

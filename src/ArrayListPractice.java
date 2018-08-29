@@ -64,8 +64,8 @@ public class ArrayListPractice {
     }
 
     /*
-    Creates an array with elements from first to last.
-    (Include the first element, but not the last one).
+    Creates an array of continuous numbers starting with "first"
+    and ending with "last". Include the first element, but not the last one.
 
     For example CreateNumberArray(4, 8) returns {4, 5, 6, 7}
      */
