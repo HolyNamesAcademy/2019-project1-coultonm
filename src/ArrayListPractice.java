@@ -137,7 +137,7 @@ public class ArrayListPractice {
     }
 
     /*
-    Increments everyone's grade level by one.
+    Increments everyone's grade level by one. If the student is in 12th grade, remove them from the array
      */
     public static void UpdateGradeLevels(ArrayList<Student> students) {
 
@@ -159,7 +159,7 @@ public class ArrayListPractice {
     Returns true if the transfer was successful (aka Student 1 has enough money
     in their account), false otherwise.
      */
-    public static boolean TransferMoney(String fromStudentName, String toStudentName, double amount) {
+    public static boolean TransferMoney(ArrayList<Student> students, String fromStudentName, String toStudentName, double amount) {
 
         // write your code above and remove the line below
         throw new NotImplementedException();

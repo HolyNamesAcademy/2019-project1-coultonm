@@ -6,14 +6,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-import static org.junit.Assert.*;
+import org.junit.Assert.*;
+
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertFalse;
+import static junit.framework.TestCase.assertTrue;
 
 public class ArrayListPracticeTest {
-    private static ArrayList<Integer> CreateIntegerArrayList() {
+    private ArrayList<Integer> CreateIntegerArrayList() {
         return new ArrayList<Integer>(Arrays.asList(5, 18, 3, 2, 6, 7, 9, 22, 10));
     }
 
-    private static ArrayList<Student> CreateStudentArrayList() {
+    private ArrayList<Student> CreateStudentArrayList() {
         return new ArrayList<>(
                 Arrays.asList(
                 new Student("Emily", 65, 11, "blue", new BankAccount("Emily", 100)),
@@ -104,7 +108,7 @@ public class ArrayListPracticeTest {
     }
 
     @Test
-    public void CreateNumberArray(int first, int last) {
+    public void CreateNumberArray() {
         // Arrange
         ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(9, 10, 11, 12, 13, 14));
 
@@ -116,7 +120,7 @@ public class ArrayListPracticeTest {
     }
 
     @Test
-    public void CreateNumberArrayEmpty(int first, int last) {
+    public void CreateNumberArrayEmpty() {
         // Arrange
         ArrayList<Integer> expected = new ArrayList<>();
 
@@ -168,21 +172,21 @@ public class ArrayListPracticeTest {
     }
 
     @Test
-    public static ArrayList<Student> CreateStudentArray(int numberOfStudents) {
+    public void CreateStudentArray() {
 
         // write your code above and remove the line below
         throw new NotImplementedException();
     }
 
     @Test
-    public static String GetTeamsString() {
+    public void GetTeamsString() {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
             ArrayList<Student> team = CreateStudentArrayList();
             teams.add(team);
         }
-        String output =
+        String expected =
                "Emily Joshua Jessica Michael Daniel Madison\n" +
                "Emily Joshua Jessica Michael Daniel Madison\n" +
                "Emily Joshua Jessica Michael Daniel Madison\n" +
@@ -190,38 +194,78 @@ public class ArrayListPracticeTest {
 
 
         // Act
-        Student actual = ArrayListPractice.GetTallestStudent(students);
+        String actual = ArrayListPractice.GetTeamsString(teams);
 
         // Assert
         assertEquals(expected, actual);
     }
 
     @Test
-    public static void UpdateFavoriteColor(ArrayList<Student> students, String name, String newFavoriteColor) {
+    public void UpdateFavoriteColor() {
+        // Arrange
+        ArrayList<Student> students = CreateStudentArrayList();
 
-        // write your code above and remove the line below
-        throw new NotImplementedException();
+        // Act
+        ArrayListPractice.UpdateFavoriteColor(students, "Jessica", "brown");
+
+        // Assert
+        assertEquals("brown", students.get(2).GetFavoriteColor());
     }
 
     @Test
-    public static void UpdateGradeLevels(ArrayList<Student> students) {
+    public void UpdateGradeLevels() {
+        // Arrange
+        ArrayList<Student> students = CreateStudentArrayList();
 
-        // write your code above and remove the line below
-        throw new NotImplementedException();
+        // Act
+        ArrayListPractice.UpdateGradeLevels(students);
+
+        // Assert
+        assertEquals(4, students.size());
+        assertEquals(12, students.get(0).GetGradeLevel());
+        assertEquals(12, students.get(1).GetGradeLevel());
+        assertEquals(10, students.get(2).GetGradeLevel());
+        assertEquals(11, students.get(3).GetGradeLevel());
     }
 
     @Test
-    public static ArrayList<Student> GetStudentsInGradeLevel(ArrayList<Student> students, int gradeLevel) {
+    public void GetStudentsInGradeLevel() {
+        // Arrange
+        ArrayList<Student> students = CreateStudentArrayList();
 
-        // write your code above and remove the line below
-        throw new NotImplementedException();
+        // Act
+        ArrayList<Student> output = ArrayListPractice.GetStudentsInGradeLevel(students, 11);
+
+        // Assert
+        assertEquals(students.get(0), output.get(0));
+        assertEquals(students.get(2), output.get(1));
     }
 
     @Test
-    public static boolean TransferMoney(String fromStudentName, String toStudentName, double amount) {
+    public void TransferMoneySuccess() {
+        // Arrange
+        ArrayList<Student> students = CreateStudentArrayList();
 
-        // write your code above and remove the line below
-        throw new NotImplementedException();
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", 30);
+
+        // Assert
+        assertEquals(20, students.get(3).GetBankAccount().GetBalance(), 0.1);
+        assertEquals(140, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertTrue(output);
     }
 
+    @Test
+    public void TransferMoneyFailure() {
+        // Arrange
+        ArrayList<Student> students = CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", 80);
+
+        // Assert
+        assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
+        assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
 }
