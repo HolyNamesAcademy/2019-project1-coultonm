@@ -25,4 +25,29 @@ public class Student {
     // Setters
     public void SetGradeLevel(int gradeLevel) { this.gradeLevel = gradeLevel; }
     public void SetFavoriteColor(String favoriteColor) { this.favoriteColor = favoriteColor; }
+
+    // define comparison
+    public boolean equals(Student other) {
+        if (!name.equals(other.name)) {
+            return false;
+        }
+
+        if (height != other.height) {
+            return false;
+        }
+
+        if (gradeLevel != other.gradeLevel) {
+            return false;
+        }
+
+        if (!favoriteColor.equals(other.favoriteColor)) {
+            return false;
+        }
+
+        if (!bankAccount.equals(other.bankAccount)) {
+            return false;
+        }
+
+        return true;
+    }
 }

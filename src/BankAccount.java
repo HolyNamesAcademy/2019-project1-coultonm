@@ -78,5 +78,18 @@ public class BankAccount {
         throw new NotImplementedException();
     }
 
+    /* Returns true if two bank accounts are "equal". For our purposes,
+    they are equal if the names and the balances are the same.
+     */
+    boolean equals(BankAccount other) {
+        if (!userName.equals(other.userName)) {
+            return false;
+        }
 
+        if (Math.abs(accountBalance - other.accountBalance) > 0.1) {
+            return false;
+        }
+
+        return true;
+    }
 }

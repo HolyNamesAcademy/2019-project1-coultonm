@@ -106,7 +106,7 @@ public class ArrayListPractice {
     Creates an array with the given number of students.
     You can initialize the student objects however you like as long as all elements are valid.
      */
-    public static ArrayList<Student> CreateStudentArray(int numberOfStudents) {
+    public static ArrayList<Student> CreateStudentArray(ArrayList<String> names, ArrayList<Integer> heights, ArrayList<Integer> gradeLevels, ArrayList<String> favoriteColors, ArrayList<BankAccount> bankAccounts) {
 
         // write your code above and remove the line below
         throw new NotImplementedException();
