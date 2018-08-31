@@ -103,8 +103,9 @@ public class ArrayListPractice {
     }
 
     /*
-    Creates an array with the given number of students.
-    You can initialize the student objects however you like as long as all elements are valid.
+    Creates an array using the information provided in via the parameters.
+    (names[0], heights[0] ... are for the first student. names[1], height[1]...
+    are for the second student, etc.)
      */
     public static ArrayList<Student> CreateStudentArray(ArrayList<String> names, ArrayList<Integer> heights, ArrayList<Integer> gradeLevels, ArrayList<String> favoriteColors, ArrayList<BankAccount> bankAccounts) {
 
