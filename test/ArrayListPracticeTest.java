@@ -11,26 +11,13 @@ import org.junit.Assert.*;
 import static junit.framework.TestCase.*;
 
 public class ArrayListPracticeTest {
-    private ArrayList<Integer> CreateIntegerArrayList() {
-        return new ArrayList<Integer>(Arrays.asList(5, 18, 3, 2, 6, 7, 9, 22, 10));
-    }
 
-    private ArrayList<Student> CreateStudentArrayList() {
-        return new ArrayList<>(
-                Arrays.asList(
-                new Student("Emily", 65, 11, "blue", new BankAccount("Emily", 100)),
-                new Student("Joshua", 67, 12, "orange", new BankAccount("Joshua", 120)),
-                new Student("Jessica", 56, 11, "yellow", new BankAccount("Jessica", 200)),
-                new Student("Michael", 60, 9, "green", new BankAccount("Michael", 50)),
-                new Student("Daniel", 70, 10, "purple", new BankAccount("Daniel", 75)),
-                new Student("Madison", 68, 12, "red", new BankAccount("Madison", 110))
-            ));
-    }
+
 
     @Test
     public void GetFirst() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         int expected = 5;
 
         // Act
@@ -43,7 +30,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetThird() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         int expected = 3;
 
         // Act
@@ -56,7 +43,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetLast() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         int expected = 10;
 
         // Act
@@ -69,7 +56,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetSum() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         int expected = 82;
 
         // Act
@@ -82,7 +69,7 @@ public class ArrayListPracticeTest {
     @Test
     public void ConvertToString() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         String expected = "5 18 3 2 6 7 9 22 10";
 
         // Act
@@ -95,7 +82,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetMax() {
         // Arrange
-        ArrayList<Integer> numbers = CreateIntegerArrayList();
+        ArrayList<Integer> numbers = ArrayListPracticeMain.CreateIntegerArrayList();
         int expected = 22;
 
         // Act
@@ -133,7 +120,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetStudentWithFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
         Student expectedStudent = students.get(2);
 
         // Act
@@ -146,7 +133,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
         String expected = "purple";
 
         // Act
@@ -159,7 +146,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetTallestStudent() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
         Student expected = students.get(4);
 
         // Act
@@ -204,7 +191,7 @@ public class ArrayListPracticeTest {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            ArrayList<Student> team = CreateStudentArrayList();
+            ArrayList<Student> team = ArrayListPracticeMain.CreateStudentArrayList();
             teams.add(team);
         }
         String expected =
@@ -224,7 +211,7 @@ public class ArrayListPracticeTest {
     @Test
     public void UpdateFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
 
         // Act
         ArrayListPractice.UpdateFavoriteColor(students, "Jessica", "brown");
@@ -236,7 +223,7 @@ public class ArrayListPracticeTest {
     @Test
     public void UpdateGradeLevels() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
 
         // Act
         ArrayListPractice.UpdateGradeLevels(students);
@@ -252,7 +239,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetStudentsInGradeLevel() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
 
         // Act
         ArrayList<Student> output = ArrayListPractice.GetStudentsInGradeLevel(students, 11);
@@ -265,7 +252,7 @@ public class ArrayListPracticeTest {
     @Test
     public void TransferMoneySuccess() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
 
         // Act
         boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", 30);
@@ -279,7 +266,7 @@ public class ArrayListPracticeTest {
     @Test
     public void TransferMoneyFailure() {
         // Arrange
-        ArrayList<Student> students = CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
 
         // Act
         boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", 80);

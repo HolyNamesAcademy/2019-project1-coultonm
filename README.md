@@ -25,7 +25,11 @@ Go to the [IntelliJ Setup Page](https://holynamesseattle-my.sharepoint.com/perso
 
 The Project
 -----
-This project has two parts. The first part is called ShapeMaker. In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespace. It will be a good exercise to warm up your for loops and if statements. The second part is called BankAccountManager. The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account.
+This project has three parts:
+
+1. **ShapeMaker**: In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespaces (spaces, tabs, and newlines). It will be a good exercise to warm up your for loops and if statements. 
+2. **BankAccountManager**: The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account. This part will be a good exercise to review constructors, member variables, and other things about classes.
+3. **ArrayListPractice**: In ArrayListPractice, you will implement several functions that involve working with ArrayLists. In some of the functions, the ArrayLists will contain integers, and in others, the ArrayLists will contain *Student* objects, where *Student* is a class that represents a student. This section will be good practice for working with ArrayLists and clases/objects.
 
 ShapeMaker
 -----
@@ -51,9 +55,17 @@ The BankAccountManager is a command line application that allows you to maintain
 
 Your job is to implement the BankAccount class so that it keeps track of the name and account balance. You will have to implement the constructor, a couple of getters, and a couple of methods. All of those methods can be found in the BankAccount class. You will also have to implement "PrintAccountInfo" function, located in BankAccountManager.
 
+You can test your BankAccount class using the BankAccountManager configuration in the dropdown next to the play button.
+
+ArrayListPractice
+-----
+The functions needed to be implemented are in the ArrayListPractice class. ArrayListPractice is similar to ShapeMaker in that all of the functions are static, standalone functions. You don't need to implement one function for another to work. 
+
+Your job is to implement each of the functions according to the comment above the function definition. Some of the functions involve Student objects. You can find the member variables and member functions of the Student class in the Student class file. One of the functions uses the BankAccount class that you implemented in part #2. You will need to finish the BankAccount class before implementing this function.
+
 Unit Tests
 -----
-You'll notice that there are also 3 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', and 'ShapeMakerExtraCreditTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
+You'll notice that there are also 4 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'ShapeMakerExtraCreditTest', 'BankAccountTest', and 'ArrayListPracticeTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
 Bonus Assignment
 -----
@@ -90,8 +102,8 @@ Grading Rubric
 
 | <h3>Units Tests</h3>| <h3>55 pts</h3>|
 | :----------- | ------:|
-| BankAccount Tests (5 pts * 5 tests) | 25 pts |
-| ShapeMaker Tests (5 pts * 6 tests)| 30 pts |
+| BankAccount Tests (5 pts \* 5 tests) | 25 pts |
+| ShapeMaker Tests (5 pts \* 6 tests)| 30 pts |
 | <h3>Code Quality</h3> | <h3>35 pts</h3> |
 | No compile errors | 12 pts |
 | [Responsible error handling](https://beginnersbook.com/2013/04/try-catch-in-java) <!--More advanced guide: https://stackify.com/best-practices-exceptions-java--> | 6 pts |
