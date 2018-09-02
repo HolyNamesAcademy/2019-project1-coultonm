@@ -138,15 +138,6 @@ public class ArrayListPractice {
     }
 
     /*
-    Increments everyone's grade level by one. If the student is in 12th grade, remove them from the array
-     */
-    public static void UpdateGradeLevels(ArrayList<Student> students) {
-
-        // write your code above and remove the line below
-        throw new NotImplementedException();
-    }
-
-    /*
     Returns an ArrayList consisting of all students in the given grade level.
      */
     public static ArrayList<Student> GetStudentsInGradeLevel(ArrayList<Student> students, int gradeLevel) {
@@ -161,6 +152,15 @@ public class ArrayListPractice {
     in their account), false otherwise.
      */
     public static boolean TransferMoney(ArrayList<Student> students, String fromStudentName, String toStudentName, double amount) {
+
+        // write your code above and remove the line below
+        throw new NotImplementedException();
+    }
+
+    /*
+    Increments everyone's grade level by one. If the student is in 12th grade, remove them from the array.
+    */
+    public static void UpdateGradeLevels(ArrayList<Student> students) {
 
         // write your code above and remove the line below
         throw new NotImplementedException();

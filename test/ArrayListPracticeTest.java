@@ -76,7 +76,7 @@ public class ArrayListPracticeTest {
         String actual = ArrayListPractice.ConvertToString(numbers);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(expected, actual.trim());
     }
 
     @Test
@@ -183,6 +183,8 @@ public class ArrayListPracticeTest {
                         new Student("Andrew", 70, 11, "green", new BankAccount("Andrew", 90)),
                         new Student("Ashley", 64, 12, "pink", new BankAccount("Ashley", 80))
                 ));
+
+        // TODO: HGOTUR: assertSame doesn't work as expected
         assertSame(expected, students);
     }
 
@@ -195,10 +197,10 @@ public class ArrayListPracticeTest {
             teams.add(team);
         }
         String expected =
-               "Emily Joshua Jessica Michael Daniel Madison\n" +
-               "Emily Joshua Jessica Michael Daniel Madison\n" +
-               "Emily Joshua Jessica Michael Daniel Madison\n" +
-               "Emily Joshua Jessica Michael Daniel Madison\n";
+               "Team 1: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
+               "Team 2: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
+               "Team 3: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
+               "Team 4: Emily, Joshua, Jessica, Michael, Daniel, Madison\n";
 
 
         // Act
