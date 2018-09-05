@@ -120,7 +120,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetStudentWithFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
         Student expectedStudent = students.get(2);
 
         // Act
@@ -133,7 +133,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
         String expected = "purple";
 
         // Act
@@ -146,7 +146,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetTallestStudent() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
         Student expected = students.get(4);
 
         // Act
@@ -193,7 +193,7 @@ public class ArrayListPracticeTest {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
         for (int i = 0; i < 4; i++) {
-            ArrayList<Student> team = ArrayListPracticeMain.CreateStudentArrayList();
+            ArrayList<Student> team = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
             teams.add(team);
         }
         String expected =
@@ -213,7 +213,7 @@ public class ArrayListPracticeTest {
     @Test
     public void UpdateFavoriteColor() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
 
         // Act
         ArrayListPractice.UpdateFavoriteColor(students, "Jessica", "brown");
@@ -225,7 +225,7 @@ public class ArrayListPracticeTest {
     @Test
     public void UpdateGradeLevels() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
 
         // Act
         ArrayListPractice.UpdateGradeLevels(students);
@@ -241,7 +241,7 @@ public class ArrayListPracticeTest {
     @Test
     public void GetStudentsInGradeLevel() {
         // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
 
         // Act
         ArrayList<Student> output = ArrayListPractice.GetStudentsInGradeLevel(students, 11);

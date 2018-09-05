@@ -6,13 +6,17 @@ public class Student {
     private String favoriteColor;
     private BankAccount bankAccount;
 
-    // Constructor
-    Student(String name, int height, int gradeLevel, String favoriteColor, BankAccount bankAccount) {
+    // Constructors
+    public Student(String name, int height, int gradeLevel, String favoriteColor, BankAccount bankAccount) {
         this.name = name;
         this.height = height;
         this.gradeLevel = gradeLevel;
         this.favoriteColor = favoriteColor;
         this.bankAccount = bankAccount;
+    }
+
+    public Student(String name, int height, int gradeLevel, String favoriteColor) {
+        this(name, height, gradeLevel, favoriteColor, null);
     }
 
     // Getters

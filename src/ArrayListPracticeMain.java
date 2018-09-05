@@ -23,4 +23,16 @@ public class ArrayListPracticeMain {
                         new Student("Madison", 68, 12, "red", new BankAccount("Madison", 110))
                 ));
     }
+
+    public static ArrayList<Student> CreateStudentArrayListNoBankAccount() {
+        return new ArrayList<>(
+                Arrays.asList(
+                        new Student("Emily", 65, 11, "blue"),
+                        new Student("Joshua", 67, 12, "orange"),
+                        new Student("Jessica", 56, 11, "yellow"),
+                        new Student("Michael", 60, 9, "green"),
+                        new Student("Daniel", 70, 10, "purple"),
+                        new Student("Madison", 68, 12, "red")
+                ));
+    }
 }
