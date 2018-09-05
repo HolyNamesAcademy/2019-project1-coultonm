@@ -86,7 +86,7 @@ public class ArrayListPracticeTest {
         int expected = 22;
 
         // Act
-        String actual = ArrayListPractice.ConvertToString(numbers);
+        int actual = ArrayListPractice.GetMax(numbers);
 
         // Assert
         assertEquals(expected, actual);
