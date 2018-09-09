@@ -1,4 +1,3 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class ShapeMaker {
     /*
@@ -36,7 +35,7 @@ public class ShapeMaker {
     public static String PrintRectangle(int length, int height)
     {
         // write your code here
-        throw new NotImplementedException();
+        return "";
     }
 
     /*
@@ -51,7 +50,7 @@ public class ShapeMaker {
     public static String PrintRightTriangle(int height)
     {
         // write your code here
-        throw new NotImplementedException();
+        return "";
     }
 
     /*
@@ -66,7 +65,7 @@ public class ShapeMaker {
     public static String PrintInvertedRightTriangle(int height)
     {
         // write your code here
-        throw new NotImplementedException();
+        return "";
     }
 
         /*
@@ -82,7 +81,7 @@ public class ShapeMaker {
     public static String PrintBackwardsRightTriangle(int height)
     {
         // write your code here
-        throw new NotImplementedException();
+        return "";
     }
 
     /*
@@ -97,6 +96,6 @@ public class ShapeMaker {
     public static String PrintEquilateralTriangle(int height)
     {
         // write your code here
-        throw new NotImplementedException();
+        return "";
     }
 }

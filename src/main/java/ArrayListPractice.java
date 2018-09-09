@@ -1,8 +1,5 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 import java.lang.reflect.Array;
 import java.util.ArrayList;
-
 
 public class ArrayListPractice {
     /*
@@ -11,7 +8,7 @@ public class ArrayListPractice {
     public static int GetFirst(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -20,7 +17,7 @@ public class ArrayListPractice {
     public static int GetThird(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -29,7 +26,7 @@ public class ArrayListPractice {
     public static int GetLast(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -38,7 +35,7 @@ public class ArrayListPractice {
     public static int GetSum(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -51,7 +48,7 @@ public class ArrayListPractice {
     public static String ConvertToString(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -60,7 +57,7 @@ public class ArrayListPractice {
     public static int GetMax(ArrayList<Integer> numbers) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -72,7 +69,7 @@ public class ArrayListPractice {
     public static ArrayList<Integer> CreateNumberArray(int first, int last) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -81,7 +78,7 @@ public class ArrayListPractice {
     public static Student GetStudentWithFavoriteColor(ArrayList<Student> students, String color) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -90,7 +87,7 @@ public class ArrayListPractice {
     public static String GetFavoriteColorOfStudent(ArrayList<Student> students, String name) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -99,7 +96,7 @@ public class ArrayListPractice {
     public static Student GetTallestStudent(ArrayList<Student> students) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -110,7 +107,7 @@ public class ArrayListPractice {
     public static ArrayList<Student> CreateStudentArray(ArrayList<String> names, ArrayList<Integer> heights, ArrayList<Integer> gradeLevels, ArrayList<String> favoriteColors, ArrayList<BankAccount> bankAccounts) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -125,7 +122,7 @@ public class ArrayListPractice {
     public static String GetTeamsString(ArrayList<ArrayList<Student>> teams) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -134,7 +131,7 @@ public class ArrayListPractice {
     public static void UpdateFavoriteColor(ArrayList<Student> students, String name, String newFavoriteColor) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -143,7 +140,7 @@ public class ArrayListPractice {
     public static ArrayList<Student> GetStudentsInGradeLevel(ArrayList<Student> students, int gradeLevel) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -154,7 +151,7 @@ public class ArrayListPractice {
     public static boolean TransferMoney(ArrayList<Student> students, String fromStudentName, String toStudentName, double amount) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -163,6 +160,6 @@ public class ArrayListPractice {
     public static void UpdateGradeLevels(ArrayList<Student> students) {
 
         // write your code above and remove the line below
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 }

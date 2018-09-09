@@ -1,4 +1,3 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class BankAccount {
     private String userName;
@@ -10,7 +9,7 @@ public class BankAccount {
     public BankAccount(String in_userName, double in_accountBalance)
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -19,7 +18,7 @@ public class BankAccount {
     public String GetName()
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -28,7 +27,7 @@ public class BankAccount {
     public double GetBalance()
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -42,7 +41,7 @@ public class BankAccount {
     public double Deposit(double amount)
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -58,7 +57,7 @@ public class BankAccount {
     public double Withdraw(double amount)
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /*
@@ -75,7 +74,7 @@ public class BankAccount {
     public double AddInterest(int numYears, double interestRate)
     {
         // write your code here
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     /* Returns true if two bank accounts are "equal". For our purposes,
