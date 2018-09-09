@@ -25,11 +25,15 @@ Go to the [IntelliJ Setup Page](https://holynamesseattle-my.sharepoint.com/perso
 
 The Project
 -----
-This project has two parts. The first part is called ShapeMaker. In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespace. It will be a good exercise to warm up your for loops and if statements. The second part is called BankAccountManager. The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account.
+This project has three parts:
+
+1. **ShapeMaker**: In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespaces (spaces, tabs, and newlines). It will be a good exercise to warm up your for loops and if statements. 
+2. **BankAccountManager**: The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account. This part will be a good exercise to review constructors, member variables, and other things about classes.
+3. **ArrayListPractice**: In ArrayListPractice, you will implement several functions that involve working with ArrayLists. In some of the functions, the ArrayLists will contain integers, and in others, the ArrayLists will contain *Student* objects, where *Student* is a class that represents a student. This section will be good practice for working with ArrayLists and clases/objects.
 
 ShapeMaker
 -----
-In order to run ShapeMaker, click on the dropdown next to the play button in the top right and select "ShapeMaker". Then hit play. Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
+In order to run ShapeMaker, click on the dropdown next to the play button in the top right, select "Main", and at the prompt, type "s". Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
 
 All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. 
 
@@ -51,9 +55,19 @@ The BankAccountManager is a command line application that allows you to maintain
 
 Your job is to implement the BankAccount class so that it keeps track of the name and account balance. You will have to implement the constructor, a couple of getters, and a couple of methods. All of those methods can be found in the BankAccount class. You will also have to implement "PrintAccountInfo" function, located in BankAccountManager.
 
+You can test your BankAccount class using the BankAccountManager configuration in the dropdown next to the play button.
+
+ArrayListPractice
+-----
+The functions needed to be implemented are in the ArrayListPractice class. ArrayListPractice is similar to ShapeMaker in that all of the functions are static, standalone functions. You don't need to implement one function for another to work. 
+
+Your job is to implement each of the functions according to the comment above the function definition. Some of the functions involve Student objects. You can find the member variables and member functions of the Student class in the Student class file. One of the functions uses the BankAccount class that you implemented in part #2. You will need to finish the BankAccount class before implementing this function.
+
+**Extra Credit Opportunity:** The last two functions in the ArrayListPractice, *UpdateGradeLevels* and *SortByGradeAndName*, are extra credit.
+
 Unit Tests
 -----
-You'll notice that there are also 3 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', and 'ShapeMakerExtraCreditTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
+You'll notice that there are also 4 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'ShapeMakerExtraCreditTest', 'BankAccountTest', 'ArrayListPracticeTest', and 'ArrayListPracticeExtraCredit'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
 Bonus Assignment
 -----
@@ -67,6 +81,12 @@ Before you work on the bonus assignment, make sure you commit and push, so you d
 In order to support this functionality, you will need to keep track of and store all of the bank accounts. To do that, you will need to use an ArrayList. Whenever you create a new bank account object, you will need to add the bank accounts to this array. You'll need to do this in two places: when you create the first account and when you call "AddUser". When "SwitchUser" is called, you will need to switch the current account to the new account that is specified. You should create a helper function to go through the array and return the account with a given name. 
 
 **Note:** You should not do this in the BankAccount class. In our program, each class has a responsibility. BankAccount has the responsibility to do all operations associated with a single BankAccount. BankAccountManager has the responsibility to tell the BankAccount objects what to do (this includes creating them, storing them, and telling them to deposit or withdraw). So we should be creating the ArrayList and adding all of the new functionality in our BankAccountManager class, and using that to store and fetch BankAccounts. FYI, this isn't the only way to design this program, but it's the way I chose to design it. 
+
+A Note About Extra Credit and Bonus Assignments
+-----
+You may have noticed that there are a lot of extra credit opportunities and bonus assignments in this project. That will be a common theme in all of our projects. Our goal is to challenge you by giving you assignments that are just a little above what you are comfortable with, because working on problems at that level is when you learn the most. We have extra credit to challenge students at all levels. This means different parts of the extra credit are different levels of difficulty. Some are similar difficulty to the assignment, and some are significantly harder. Try as much of the extra credit as you feel is within your grasp, and don't feel discouraged if parts of the extra credit doesn't make sense. They're designed to be hard!
+
+In terms of grades, you can achieve Exceeds Expectations by doing all of the ShapeMaker extra credit and the UpdateGradeLevels function in ArrayListPractice. However, if you feel up to the challenge, we encourage you try as much of the extra credit as you can.
 
 Committing your Changes and Turning In The Project
 -----
@@ -85,23 +105,13 @@ You can commit and push ("push" means send it to GitHub.com to save it there) by
 4. Go to your project page on GitHub, and make sure that your changes are there. 
 5. That's it. The last change you submit before the deadline will be considered your turned in assignment. You can turn in additional submissions after the deadline, but remember that there is a 10% penalty added each week after the deadline you turn in the assignment.
 
-Grading Rubric
------
+# Grading
 
-| <h3>Units Tests</h3>| <h3>55 pts</h3>|
-| :----------- | ------:|
-| BankAccount Tests (5 pts * 5 tests) | 25 pts |
-| ShapeMaker Tests (5 pts * 6 tests)| 30 pts |
-| <h3>Code Quality</h3> | <h3>35 pts</h3> |
-| No compile errors | 12 pts |
-| [Responsible error handling](https://beginnersbook.com/2013/04/try-catch-in-java) <!--More advanced guide: https://stackify.com/best-practices-exceptions-java--> | 6 pts |
-| [Code spaced and indented properly](https://stackoverflow.com/questions/17879475/how-enable-auto-format-code-for-intellij-idea) | 12 pts |
-| [Descriptive variable names](http://www.makinggoodsoftware.com/2009/05/04/71-tips-for-naming-variables) | 5 pts |
-| Reasonable breakdown of packages and classes | N/A |
-| [Single-Responsibility Principle (methods and classes do one thing)](http://www.oodesign.com/single-responsibility-principle.html) | N/A |
-| <h3>Administrative</h3> | <h3>20 pts</h3> |
-| Correctly pushed to GitHub | 5 pts |
-| Turned in on time | 15 pts |
-| <h3>Extra Credit</h3> | <h3>10 pts</h3> |
-| No extra spaces at the end of the line | 10 pts |
-| <h3>Total</h3> (not including extra credit) | <h3>110 pts</h3> |
+Your grade for each project will fall into one of three categories:
+
+| Grade Level         | Explanation |
+| :------------------ |:----------- |
+| *Exceeds Expectations*        | <ul><li>Quality is outstanding. Extra credit and/or independent improvements apparent.</li><li>All tests are passing.</li></ul> |
+| *Excellent*                   | <ul><li>Overall quality is high.</li><li>All tests are passing.</li></ul> |
+| *Satisfactory*                | <ul><li>Overall quality is good.</li><li>Most tests are passing.</li><li>Improvements can be made to bring the quality up to <i>Excellent</i>.</li></ul> |
+| *Needs Improvement*           | <ul><li>Overall quality is not yet high enough and the submission will not be accepted.</li><li>Improvements must be made to bring the quality up to at least <i>Satisfactory</i>.</li></ul> |
