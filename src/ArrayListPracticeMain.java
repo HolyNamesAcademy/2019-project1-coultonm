@@ -2,10 +2,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrayListPracticeMain {
-    public static void main(String[] args) {
+    public static void Run() {
         // Use this space to test ArrayListPractice
         ArrayList<Integer> numbers = CreateIntegerArrayList();
         ArrayList<Student> students = CreateStudentArrayList();
+
+        /* Call ArrayListPractice functions here. For example:
+
+        String favoriteColor = ArrayListPractice.GetFavoriteColorOfStudent(students, "Madison");
+        System.out.println(favoriteColor);
+         */
     }
 
     public static ArrayList<Integer> CreateIntegerArrayList() {

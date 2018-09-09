@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class BankAccountManager {
 
-    public static void main(String[] args) {
+    public static void Run() {
         // Initialize the scanner so we can read in user input
         Scanner input = new Scanner(System.in);
 

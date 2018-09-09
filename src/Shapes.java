@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Shapes {
-    public static void main(String[] args) {
+    public static void Run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a length: ");
         int length = scanner.nextInt();
