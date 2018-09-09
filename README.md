@@ -33,7 +33,7 @@ This project has three parts:
 
 ShapeMaker
 -----
-In order to run ShapeMaker, click on the dropdown next to the play button in the top right and select "ShapeMaker". Then hit play. Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
+In order to run ShapeMaker, click on the dropdown next to the play button in the top right, select "Main", and at the prompt, type "s". Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
 
 All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. 
 
@@ -63,9 +63,11 @@ The functions needed to be implemented are in the ArrayListPractice class. Array
 
 Your job is to implement each of the functions according to the comment above the function definition. Some of the functions involve Student objects. You can find the member variables and member functions of the Student class in the Student class file. One of the functions uses the BankAccount class that you implemented in part #2. You will need to finish the BankAccount class before implementing this function.
 
+**Extra Credit Opportunity:** The last two functions in the ArrayListPractice, *UpdateGradeLevels* and *SortByGradeAndName*, are extra credit.
+
 Unit Tests
 -----
-You'll notice that there are also 4 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'ShapeMakerExtraCreditTest', 'BankAccountTest', and 'ArrayListPracticeTest'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
+You'll notice that there are also 4 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'ShapeMakerExtraCreditTest', 'BankAccountTest', 'ArrayListPracticeTest', and 'ArrayListPracticeExtraCredit'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
 Bonus Assignment
 -----
@@ -79,6 +81,12 @@ Before you work on the bonus assignment, make sure you commit and push, so you d
 In order to support this functionality, you will need to keep track of and store all of the bank accounts. To do that, you will need to use an ArrayList. Whenever you create a new bank account object, you will need to add the bank accounts to this array. You'll need to do this in two places: when you create the first account and when you call "AddUser". When "SwitchUser" is called, you will need to switch the current account to the new account that is specified. You should create a helper function to go through the array and return the account with a given name. 
 
 **Note:** You should not do this in the BankAccount class. In our program, each class has a responsibility. BankAccount has the responsibility to do all operations associated with a single BankAccount. BankAccountManager has the responsibility to tell the BankAccount objects what to do (this includes creating them, storing them, and telling them to deposit or withdraw). So we should be creating the ArrayList and adding all of the new functionality in our BankAccountManager class, and using that to store and fetch BankAccounts. FYI, this isn't the only way to design this program, but it's the way I chose to design it. 
+
+A Note About Extra Credit and Bonus Assignments
+-----
+You may have noticed that there are a lot of extra credit opportunities and bonus assignments in this project. That will be a common theme in all of our projects. Our goal is to challenge you by giving you assignments that are just a little above what you are comfortable with, because working on problems at that level is when you learn the most. We have extra credit to challenge students at all levels. This means different parts of the extra credit are different levels of difficulty. Some are similar difficulty to the assignment, and some are significantly harder. Try as much of the extra credit as you feel is within your grasp, and don't feel discouraged if parts of the extra credit doesn't make sense. They're designed to be hard!
+
+In terms of grades, you can achieve Exceeds Expectations by doing all of the ShapeMaker extra credit and the UpdateGradeLevels function in ArrayListPractice. However, if you feel up to the challenge, we encourage you try as much of the extra credit as you can.
 
 Committing your Changes and Turning In The Project
 -----
