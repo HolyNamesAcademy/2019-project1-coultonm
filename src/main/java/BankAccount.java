@@ -1,12 +1,12 @@
 
 public class BankAccount {
-    private String userName;
+    private String name;
     private double accountBalance;
 
     /*
     Initialize the bank account.
      */
-    public BankAccount(String in_userName, double in_accountBalance)
+    public BankAccount(String in_name, double in_accountBalance)
     {
         // write your code here
         throw new UnsupportedOperationException();
@@ -94,7 +94,7 @@ public class BankAccount {
 
         BankAccount otherAccount = (BankAccount) other;
 
-        if (!userName.equals(otherAccount.userName)) {
+        if (!name.equals(otherAccount.name)) {
             return false;
         }
 
