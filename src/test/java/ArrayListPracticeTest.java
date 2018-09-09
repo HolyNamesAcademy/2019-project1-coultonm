@@ -74,7 +74,7 @@ public class ArrayListPracticeTest {
         String actual = ArrayListPractice.ConvertToString(numbers);
 
         // Assert
-        assertEquals(expected, actual.trim());
+        assertEquals(expected.trim(), actual.trim());
     }
 
     @Test
@@ -204,7 +204,7 @@ public class ArrayListPracticeTest {
         String actual = ArrayListPractice.GetTeamsString(teams);
 
         // Assert
-        assertEquals(expected, actual);
+        assertEquals(expected.trim(), actual.trim());
     }
 
     @Test
