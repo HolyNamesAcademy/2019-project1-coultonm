@@ -155,9 +155,22 @@ public class ArrayListPractice {
     }
 
     /*
+    EXTRA CREDIT:
     Increments everyone's grade level by one. If the student is in 12th grade, remove them from the array.
     */
     public static void UpdateGradeLevels(ArrayList<Student> students) {
+
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
+    }
+
+    /*
+    EXTRA CREDIT:
+    Sort the array list by increasing grade level (all the 9th graders, then 10th graders, etc)
+    If there is a tie (aka 2 people in the same grade), the person whose name is first in the
+    alphabet should appear first.
+     */
+    public static void SortByGradeAndName(ArrayList<Student> students) {
 
         // write your code above and remove the line below
         throw new UnsupportedOperationException();

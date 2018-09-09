@@ -220,22 +220,6 @@ public class ArrayListPracticeTest {
     }
 
     @Test
-    public void UpdateGradeLevels() {
-        // Arrange
-        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
-
-        // Act
-        ArrayListPractice.UpdateGradeLevels(students);
-
-        // Assert
-        assertEquals(4, students.size());
-        assertEquals(12, students.get(0).GetGradeLevel());
-        assertEquals(12, students.get(1).GetGradeLevel());
-        assertEquals(10, students.get(2).GetGradeLevel());
-        assertEquals(11, students.get(3).GetGradeLevel());
-    }
-
-    @Test
     public void GetStudentsInGradeLevel() {
         // Arrange
         ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
