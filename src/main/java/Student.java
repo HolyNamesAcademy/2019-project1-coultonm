@@ -31,24 +31,37 @@ public class Student {
     public void SetFavoriteColor(String favoriteColor) { this.favoriteColor = favoriteColor; }
 
     // define comparison
-    public boolean equals(Student other) {
-        if (!name.equals(other.name)) {
+    public boolean equals(Object other) {
+        // If points to the same object, return true
+        if (other == this) {
+            return true;
+        }
+
+        /* Check if o is an instance of Complex or not
+          "null instanceof [type]" also returns false */
+        if (!(other instanceof Student)) {
             return false;
         }
 
-        if (height != other.height) {
+        Student otherStudent = (Student) other;
+
+        if (!name.equals(otherStudent.name)) {
             return false;
         }
 
-        if (gradeLevel != other.gradeLevel) {
+        if (height != otherStudent.height) {
             return false;
         }
 
-        if (!favoriteColor.equals(other.favoriteColor)) {
+        if (gradeLevel != otherStudent.gradeLevel) {
             return false;
         }
 
-        if (!bankAccount.equals(other.bankAccount)) {
+        if (!favoriteColor.equals(otherStudent.favoriteColor)) {
+            return false;
+        }
+
+        if (!bankAccount.equals(otherStudent.bankAccount)) {
             return false;
         }
 

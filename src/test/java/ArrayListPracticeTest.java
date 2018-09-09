@@ -12,8 +12,6 @@ import static junit.framework.TestCase.*;
 
 public class ArrayListPracticeTest {
 
-
-
     @Test
     public void GetFirst() {
         // Arrange
@@ -184,8 +182,7 @@ public class ArrayListPracticeTest {
                         new Student("Ashley", 64, 12, "pink", new BankAccount("Ashley", 80))
                 ));
 
-        // TODO: HGOTUR: assertSame doesn't work as expected
-        assertSame(expected, students);
+        assertEquals(expected, students);
     }
 
     @Test

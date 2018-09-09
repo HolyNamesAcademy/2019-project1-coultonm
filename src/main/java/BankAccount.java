@@ -80,12 +80,25 @@ public class BankAccount {
     /* Returns true if two bank accounts are "equal". For our purposes,
     they are equal if the names and the balances are the same.
      */
-    boolean equals(BankAccount other) {
-        if (!userName.equals(other.userName)) {
+    public boolean equals(Object other) {
+        // If points to the same object, return true
+        if (other == this) {
+            return true;
+        }
+
+        /* Check if o is an instance of Complex or not
+          "null instanceof [type]" also returns false */
+        if (!(other instanceof BankAccount)) {
             return false;
         }
 
-        if (Math.abs(accountBalance - other.accountBalance) > 0.1) {
+        BankAccount otherAccount = (BankAccount) other;
+
+        if (!userName.equals(otherAccount.userName)) {
+            return false;
+        }
+
+        if (Math.abs(accountBalance - otherAccount.accountBalance) > 0.1) {
             return false;
         }
 
