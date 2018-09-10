@@ -13,9 +13,9 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 
 Getting started
 -----
-Go to the [IntelliJ Setup Page](https://holynamesseattle-my.sharepoint.com/personal/ecudaback_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fecudaback_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%20P7%2017-18&wd=target%28_Content%20Library%2FUsing%20the%20Content%20Library.one%7CAF912239-6A74-48A4-BA23-3D819CB96383%2FIntelliJ%20Setup%7CEA8F2C82-E1EE-459F-8521-D24F0460F650%2F%29) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions under "Getting Started With The First Assignment".
+Go to the [Getting Started With The First Project](https://holynamesseattle-my.sharepoint.com/personal/mcoulton_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fmcoulton_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%2018-19&wd=target%28_Content%20Library%2FProject%201.one%7C8D2660CA-F01C-4996-822E-0089C979D619%2FGetting%20Started%20With%20The%20First%20Project%7CBABA2757-D347-4C73-BDA8-0DE9DE0AB20B%2F%29) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions to open the project in IntelliJ.
 
-1. Go to this link:  https://classroom.github.com/a/9EhOlYCR and accept the assignment. It should take you to your project page. (If it doesn't, click on the link above again, and click on the link to the project page).
+1. Go to this link:  https://classroom.github.com/a/t4wAy_tV and accept the assignment. It should take you to your project page. (If it doesn't, click on the link above again, and click on the link to the project page).
 2. On the GitHub project page, click on the green "Clone or Download" button and copy the link.
 3. Open Intellij, click on the "Checkout from Version Control" drop down and select "GitHub"
 4. On the next page paste the link you copied into the "Git Repository URL" box. 
@@ -90,7 +90,7 @@ In terms of grades, you can achieve Exceeds Expectations by doing all of the Sha
 
 Committing your Changes and Turning In The Project
 -----
-The same instructions with screenshots are in the OneNote [here](https://holynamesseattle-my.sharepoint.com/personal/ecudaback_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fecudaback_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%20P7%2017-18&wd=target%28_Content%20Library%2FUsing%20the%20Content%20Library.one%7CAF912239-6A74-48A4-BA23-3D819CB96383%2FIntelliJ%20Setup%7CEA8F2C82-E1EE-459F-8521-D24F0460F650%2F%29).
+The same instructions with screenshots are in the OneNote at the bottom of the page [here](https://holynamesseattle-my.sharepoint.com/personal/mcoulton_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fmcoulton_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%2018-19&wd=target%28_Content%20Library%2FProject%201.one%7C8D2660CA-F01C-4996-822E-0089C979D619%2FGetting%20Started%20With%20The%20First%20Project%7CBABA2757-D347-4C73-BDA8-0DE9DE0AB20B%2F%29).
 
 At the end of every class period, you should commit your changes. "Committing your changes" is basically a fancy way of saving the changes you made. It is very important and useful for two reasons:
 
