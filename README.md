@@ -48,9 +48,9 @@ The BankAccountManager is a command line application that allows you to maintain
 | Command	| Description |
 | ------- | ----------- |
 | Balance |	Prints the name and account balance. |
-| Deposit <amount> ("Deposit 43") |	Deposit takes in a dollar amount and adds it to the account balance. |
-| Withdraw <amount> ("Withdraw 13") |	Withdraw takes in a dollar amount and subtracts it from the account balance, as long as there is enough money in the account. Otherwise, it just prints an error message to the user. |
-| AddInterest <num years> <interest rate> ("AddInterest 2 .05") |	Takes in a number of years and an interest rate and calculates the new balance with interest added. For our purposes, we're just using simple interest (Interest = Balance \* Time \* Rate and New Balance = Old Balance + Interest). |
+| Deposit <amount> (ex. "Deposit 43") |	Deposit takes in a dollar amount and adds it to the account balance. |
+| Withdraw <amount> (ex. "Withdraw 13") |	Withdraw takes in a dollar amount and subtracts it from the account balance, as long as there is enough money in the account. Otherwise, it just prints an error message to the user. |
+| AddInterest <num years> <interest rate> (ex. "AddInterest 2 .05") |	Takes in a number of years and an interest rate and calculates the new balance with interest added. For our purposes, we're just using simple interest (Interest = Balance \* Time \* Rate and New Balance = Old Balance + Interest). |
 | Quit |	Exits the program. |
 
 Your job is to implement the BankAccount class so that it keeps track of the name and account balance. You will have to implement the constructor, a couple of getters, and a couple of methods. All of those methods can be found in the BankAccount class. You will also have to implement "PrintAccountInfo" function, located in BankAccountManager.
