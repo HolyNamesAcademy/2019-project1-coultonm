@@ -61,7 +61,12 @@ public class Student {
             return false;
         }
 
-        if (!bankAccount.equals(otherStudent.bankAccount)) {
+        if ((bankAccount == null && otherStudent.bankAccount != null) 
+            || (bankAccount != null && otherStudent.bankAccount == null)) {
+            return false;
+        }
+
+        if (bankAccount != null && otherStudent.bankAccount != null && !bankAccount.equals(otherStudent.bankAccount)) {
             return false;
         }
 

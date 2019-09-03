@@ -189,16 +189,14 @@ public class ArrayListPracticeTest {
     public void GetTeamsString() {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            ArrayList<Student> team = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
-            teams.add(team);
-        }
-        String expected =
-               "Team 1: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 2: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 3: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 4: Emily, Joshua, Jessica, Michael, Daniel, Madison\n";
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Emily", "Madison"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Jessica", "Joshua", "Daniel"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Michael"}));
 
+        String expected =
+               "Team 1: Emily, Madison\n" +
+               "Team 2: Jessica, Joshua, Daniel\n" +
+               "Team 3: Michael\n";
 
         // Act
         String actual = ArrayListPractice.GetTeamsString(teams);
