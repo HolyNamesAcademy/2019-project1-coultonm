@@ -45,6 +45,14 @@ public class ArrayListPracticeMain {
      * @return an ArrayList of numbers.
      */
     public static ArrayList<Student> CreateStudentArrayList(String[] studentNames) {
+        HashMap<String, Student> students = new HashMap<>();
+        students.put("Emily", new Student("Emily", 65, 11, "blue", new BankAccount("Emily", 100)));
+        students.put("Joshua", new Student("Joshua", 67, 12, "orange", new BankAccount("Joshua", 120)));
+        students.put("Jessica", new Student("Jessica", 56, 11, "yellow", new BankAccount("Jessica", 200)));
+        students.put("Michael", new Student("Michael", 60, 9, "green", new BankAccount("Michael", 50)));
+        students.put("Daniel", new Student("Daniel", 70, 10, "purple", new BankAccount("Daniel", 75)));
+        students.put("Madison", new Student("Madison", 68, 12, "red", new BankAccount("Madison", 110)));
+
         ArrayList<Student> result = new ArrayList<>();
         for (String student : studentNames) {
             if (students.containsKey(student)) {
@@ -60,33 +68,20 @@ public class ArrayListPracticeMain {
      * @return an ArrayList of numbers.
      */
     public static ArrayList<Student> CreateStudentArrayListNoBankAccount(String[] studentNames) {
+        HashMap<String, Student> studentsNoBankAccount = new HashMap<>();
+        studentsNoBankAccount.put("Emily", new Student("Emily", 65, 11, "blue"));
+        studentsNoBankAccount.put("Joshua", new Student("Joshua", 67, 12, "orange"));
+        studentsNoBankAccount.put("Jessica", new Student("Jessica", 56, 11, "yellow"));
+        studentsNoBankAccount.put("Michael", new Student("Michael", 60, 9, "green"));
+        studentsNoBankAccount.put("Daniel", new Student("Daniel", 70, 10, "purple"));
+        studentsNoBankAccount.put("Madison", new Student("Madison", 68, 12, "red"));
+
         ArrayList<Student> result = new ArrayList<>();
         for (String student : studentNames) {
-            if (students.containsKey(student)) {
-                result.add(students.get(student));
+            if (studentsNoBankAccount.containsKey(student)) {
+                result.add(studentsNoBankAccount.get(student));
             }
         }
         return result;
-    }
-
-    private static HashMap<String, Student> students;
-    private static HashMap<String, Student> studentsNoBankAccount;
-
-    static {
-        students = new HashMap<>();
-        students.put("Emily", new Student("Emily", 65, 11, "blue", new BankAccount("Emily", 100)));
-        students.put("Joshua", new Student("Joshua", 67, 12, "orange", new BankAccount("Joshua", 120)));
-        students.put("Jessica", new Student("Jessica", 56, 11, "yellow", new BankAccount("Jessica", 200)));
-        students.put("Michael", new Student("Michael", 60, 9, "green", new BankAccount("Michael", 50)));
-        students.put("Daniel", new Student("Daniel", 70, 10, "purple", new BankAccount("Daniel", 75)));
-        students.put("Madison", new Student("Madison", 68, 12, "red", new BankAccount("Madison", 110)));
-
-        studentsNoBankAccount = new HashMap<>();
-        students.put("Emily", new Student("Emily", 65, 11, "blue"));
-        students.put("Joshua", new Student("Joshua", 67, 12, "orange"));
-        students.put("Jessica", new Student("Jessica", 56, 11, "yellow"));
-        students.put("Michael", new Student("Michael", 60, 9, "green"));
-        students.put("Daniel", new Student("Daniel", 70, 10, "purple"));
-        students.put("Madison", new Student("Madison", 68, 12, "red"));
     }
 }
