@@ -19,7 +19,7 @@ public class BankAccountManager {
         {
             // Give user the options and ask for a command
             System.out.println("List of Possible Commands:");
-            System.out.println("SeeBalance");
+            System.out.println("Balance");
             System.out.println("Deposit <amount>");
             System.out.println("Withdraw <amount>");
             System.out.println("AddInterest <num years> <interest>");
