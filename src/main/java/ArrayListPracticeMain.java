@@ -3,7 +3,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class ArrayListPracticeMain {
-
+    /**
+     * This is a test function for you to test your functions.
+     */
     public static void Run() {
         // Use this space to test ArrayListPractice
         ArrayList<Integer> numbers = CreateIntegerArrayList();
@@ -23,13 +25,28 @@ public class ArrayListPracticeMain {
         return new ArrayList<Integer>(Arrays.asList(5, 18, 3, 2, 6, 7, 9, 22, 10));
     }
 
+    /**
+     * @return an ArrayList of students with bank accounts.
+     */
     public static ArrayList<Student> CreateStudentArrayList() {
         return CreateStudentArrayList(new String[]{"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
     }
 
-    public static ArrayList<Student> CreateStudentArrayList(String[] requiredStudents) {
+    /**
+     * @return an ArrayList of students without bank accounts.
+     */
+    public static ArrayList<Student> CreateStudentArrayListNoBankAccount() {
+        return CreateStudentArrayListNoBankAccount(new String[]{"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
+    }
+
+    /**
+     * @param studentNames takes a list of student names from below list of students and returns the corresponding
+     *                     student objects with bank accounts
+     * @return an ArrayList of numbers.
+     */
+    public static ArrayList<Student> CreateStudentArrayList(String[] studentNames) {
         ArrayList<Student> result = new ArrayList<>();
-        for (String student : requiredStudents) {
+        for (String student : studentNames) {
             if (students.containsKey(student)) {
                 result.add(students.get(student));
             }
@@ -37,13 +54,14 @@ public class ArrayListPracticeMain {
         return result;
     }
 
-    public static ArrayList<Student> CreateStudentArrayListNoBankAccount() {
-        return CreateStudentArrayListNoBankAccount(new String[]{"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
-    }
-
-    public static ArrayList<Student> CreateStudentArrayListNoBankAccount(String[] requiredStudents) {
+    /**
+     * @param studentNames takes a list of student names from below list of students and returns the corresponding
+     *                     student objects without bank accounts
+     * @return an ArrayList of numbers.
+     */
+    public static ArrayList<Student> CreateStudentArrayListNoBankAccount(String[] studentNames) {
         ArrayList<Student> result = new ArrayList<>();
-        for (String student : requiredStudents) {
+        for (String student : studentNames) {
             if (students.containsKey(student)) {
                 result.add(students.get(student));
             }
@@ -71,6 +89,4 @@ public class ArrayListPracticeMain {
         students.put("Daniel", new Student("Daniel", 70, 10, "purple"));
         students.put("Madison", new Student("Madison", 68, 12, "red"));
     }
-
-
 }
