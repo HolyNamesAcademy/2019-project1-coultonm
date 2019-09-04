@@ -91,7 +91,7 @@ public class BankAccount {
     }
 
     /**
-     * This is implemented for you. You do not have to implement this function.
+     * NOTE: This is implemented for you. You do not have to implement this function.
      *
      * Compares two BankAccount objects. One BankAccount is considered to be equal to another if
      * their account owners and account balances are the same.

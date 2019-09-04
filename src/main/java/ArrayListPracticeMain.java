@@ -23,14 +23,8 @@ public class ArrayListPracticeMain {
         return new ArrayList<Integer>(Arrays.asList(5, 18, 3, 2, 6, 7, 9, 22, 10));
     }
 
-    public static ArrayList<Student> CreateStudentArrayList(ArrayList<String> requiredStudents) {
-        for (var student : requiredStudents) {
-            students.stream()
-        }
-    }
-
     public static ArrayList<Student> CreateStudentArrayList() {
-        return CreateStudentArrayList({"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
+        return CreateStudentArrayList(new String[]{"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
     }
 
     public static ArrayList<Student> CreateStudentArrayList(String[] requiredStudents) {
@@ -44,7 +38,7 @@ public class ArrayListPracticeMain {
     }
 
     public static ArrayList<Student> CreateStudentArrayListNoBankAccount() {
-        return CreateStudentArrayListNoBankAccount({"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
+        return CreateStudentArrayListNoBankAccount(new String[]{"Emily", "Joshua", "Jessica", "Michael", "Daniel", "Madison"});
     }
 
     public static ArrayList<Student> CreateStudentArrayListNoBankAccount(String[] requiredStudents) {
@@ -69,7 +63,7 @@ public class ArrayListPracticeMain {
         students.put("Daniel", new Student("Daniel", 70, 10, "purple", new BankAccount("Daniel", 75)));
         students.put("Madison", new Student("Madison", 68, 12, "red", new BankAccount("Madison", 110)));
 
-        studentsNoBankAccount = new ArrayList<>();
+        studentsNoBankAccount = new HashMap<>();
         students.put("Emily", new Student("Emily", 65, 11, "blue"));
         students.put("Joshua", new Student("Joshua", 67, 12, "orange"));
         students.put("Jessica", new Student("Jessica", 56, 11, "yellow"));

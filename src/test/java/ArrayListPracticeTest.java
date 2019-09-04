@@ -189,9 +189,9 @@ public class ArrayListPracticeTest {
     public void GetTeamsString() {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
-        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Emily", "Madison"}));
-        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Jessica", "Joshua", "Daniel"}));
-        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount({"Michael"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Emily", "Madison"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Jessica", "Joshua", "Daniel"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Michael"}));
 
         String expected =
                "Team 1: Emily, Madison\n" +
