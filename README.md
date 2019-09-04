@@ -13,7 +13,8 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 
 Getting started
 -----
-Go to the [Getting Started With The First Project](https://holynamesseattle-my.sharepoint.com/personal/mcoulton_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fmcoulton_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%2018-19&wd=target%28_Content%20Library%2FProject%201.one%7C8D2660CA-F01C-4996-822E-0089C979D619%2FGetting%20Started%20With%20The%20First%20Project%7CBABA2757-D347-4C73-BDA8-0DE9DE0AB20B%2F%29) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions to open the project in IntelliJ.
+Go to the [Getting Started With The First Project](https://holynamesseattle.sharepoint.com/sites/Section_6558/_layouts/OneNote.aspx?id=%2Fsites%2FSection_6558%2FSiteAssets%2FProjects%20in%20Comp%20Sci%20-%20Mon-Wed%2019-20%20Notebook&wd=target%28Class%20Overview.one%7C74AD5220-0070-4A9A-BD5E-85B1624E453C%2FGetting%20Started%20With%20A%20Project%7C127DA7EC-BEEC-4463-BE97-A79C378AD455%2F%29
+onenote:https://holynamesseattle.sharepoint.com/sites/Section_6558/SiteAssets/Projects%20in%20Comp%20Sci%20-%20Mon-Wed%2019-20%20Notebook/Class%20Overview.one#Getting%20Started%20With%20A%20Project&section-id={74AD5220-0070-4A9A-BD5E-85B1624E453C}&page-id={127DA7EC-BEEC-4463-BE97-A79C378AD455}&end) in the OneNote (I suggest you look in the OneNote, since it also has screenshots to follow along with, but the instructions are also below) and follow the instructions to open the project in IntelliJ.
 
 1. Go to this link:  https://classroom.github.com/a/t4wAy_tV and accept the assignment. It should take you to your project page. (If it doesn't, click on the link above again, and click on the link to the project page).
 2. On the GitHub project page, click on the green "Clone or Download" button and copy the link.
@@ -90,7 +91,8 @@ In terms of grades, you can achieve Exceeds Expectations by doing all of the Sha
 
 Committing your Changes and Turning In The Project
 -----
-The same instructions with screenshots are in the OneNote at the bottom of the page [here](https://holynamesseattle-my.sharepoint.com/personal/mcoulton_holynames-sea_org/_layouts/OneNote.aspx?id=%2Fpersonal%2Fmcoulton_holynames-sea_org%2FDocuments%2FClass%20Notebooks%2FProjects%20in%20CS%20MW%2018-19&wd=target%28_Content%20Library%2FProject%201.one%7C8D2660CA-F01C-4996-822E-0089C979D619%2FGetting%20Started%20With%20The%20First%20Project%7CBABA2757-D347-4C73-BDA8-0DE9DE0AB20B%2F%29).
+The same instructions with screenshots are in the OneNote at the bottom of the page [here](https://holynamesseattle.sharepoint.com/sites/Section_6558/_layouts/OneNote.aspx?id=%2Fsites%2FSection_6558%2FSiteAssets%2FProjects%20in%20Comp%20Sci%20-%20Mon-Wed%2019-20%20Notebook&wd=target%28Class%20Overview.one%7C74AD5220-0070-4A9A-BD5E-85B1624E453C%2FGetting%20Started%20With%20A%20Project%7C127DA7EC-BEEC-4463-BE97-A79C378AD455%2F%29
+onenote:https://holynamesseattle.sharepoint.com/sites/Section_6558/SiteAssets/Projects%20in%20Comp%20Sci%20-%20Mon-Wed%2019-20%20Notebook/Class%20Overview.one#Getting%20Started%20With%20A%20Project&section-id={74AD5220-0070-4A9A-BD5E-85B1624E453C}&page-id={127DA7EC-BEEC-4463-BE97-A79C378AD455}&object-id={EF9C3912-2CFC-0150-34D0-A666E4203695}&57).
 
 At the end of every class period, you should commit your changes. "Committing your changes" is basically a fancy way of saving the changes you made. It is very important and useful for two reasons:
 
