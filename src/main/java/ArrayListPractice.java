@@ -105,7 +105,7 @@ public class ArrayListPractice {
      * @param color The favorite color the student must have.
      * @return The first student whose favorite color is the one specified.
      */
-    public static Student GetStudentWithFavoriteColor(ArrayList<Student> students, String color) {
+    public static Student GetFirstStudentWithFavoriteColor(ArrayList<Student> students, String color) {
 
         // write your code above and remove the line below
         throw new UnsupportedOperationException();

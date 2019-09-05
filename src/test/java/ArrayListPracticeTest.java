@@ -116,13 +116,13 @@ public class ArrayListPracticeTest {
 
 
     @Test
-    public void GetStudentWithFavoriteColor() {
+    public void GetFirstStudentWithFavoriteColor() {
         // Arrange
         ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
         Student expectedStudent = students.get(2);
 
         // Act
-        Student actualStudent = ArrayListPractice.GetStudentWithFavoriteColor(students, "yellow");
+        Student actualStudent = ArrayListPractice.GetFirstStudentWithFavoriteColor(students, "yellow");
 
         // Assert
         assertEquals(expectedStudent, actualStudent);
