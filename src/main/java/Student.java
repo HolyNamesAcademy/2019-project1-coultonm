@@ -1,4 +1,6 @@
-
+/**
+ * Defines a Student object. You do not have to implement this class. 
+ */
 public class Student {
     private String name;
     private int height;

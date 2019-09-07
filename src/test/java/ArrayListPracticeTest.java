@@ -257,4 +257,44 @@ public class ArrayListPracticeTest {
         assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
         assertFalse(output);
     }
+
+    @Test
+    public void TransferMoneyNegativeAmount() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", -10);
+
+        // Assert
+        assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
+        assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
+
+    @Test
+    public void TransferMoneyNonExistentStudent() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Joe", "Madison", 10);
+
+        // Assert
+        assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
+
+    @Test
+    public void TransferMoneyNonExistentStudent2() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Joe", 10);
+
+        // Assert
+        assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
 }

@@ -10,7 +10,8 @@ public class BankAccount {
      * @param in_accountBalance The starting balance for the account.
      */    public BankAccount(String in_name, double in_accountBalance)
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
@@ -19,7 +20,8 @@ public class BankAccount {
      */
     public String GetName()
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
@@ -91,6 +93,21 @@ public class BankAccount {
     }
 
     /**
+     * Returns a string representation of a BankAccount object. The string looks like this:
+     * 
+     *      Name: Serena Williams
+     *      Account Balance: 1000000.00
+     * 
+     * @return String
+     */
+    public String toString()
+    {
+
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
+    }
+
+    /**
      * NOTE: This is implemented for you. You do not have to implement this function.
      *
      * Compares two BankAccount objects. One BankAccount is considered to be equal to another if
@@ -99,7 +116,8 @@ public class BankAccount {
      * @param other The BankAccount object to compare to this one.
      * @return true if the BankAccount objects are equal. Otherwise, false.
      */
-    public boolean equals(Object other) {
+    public boolean equals(Object other) 
+    {
         // If points to the same object, return true
         if (other == this) {
             return true;
