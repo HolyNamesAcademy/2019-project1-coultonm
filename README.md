@@ -37,9 +37,9 @@ In order to run ShapeMaker, click on the dropdown next to the play button in the
 
 All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly. 
 
-**Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
-
 Start by implementing the first function. Then hit play and see the program run, and see if you implemented it properly. If you get it right, move onto the next function. Otherwise, make whatever corrections you need to make and run it again. I recommend running the program very often. That will allow you to make sure you are on the right track. You should absolutely be running it after each function that you implement.
+
+**Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
 
 BankAccountManager
 -----
@@ -67,7 +67,7 @@ Your job is to implement each of the functions according to the comment above th
 
 Unit Tests
 -----
-You'll notice that there are also 4 other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'ShapeMakerExtraCreditTest', 'BankAccountTest', 'ArrayListPracticeTest', and 'ArrayListPracticeExtraCredit'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
+You'll notice that, along with 'Main', there are several other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', 'ArrayListPracticeTest', 'AllTestsNoExtraCredit', 'ShapeMakerExtraCreditTest', 'ArrayListPracticeExtraCredit', and 'AllTestsWithExtraCredit'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
 
 Bonus Assignment
 -----
@@ -107,7 +107,7 @@ You can commit and push ("push" means send it to GitHub.com to save it there) by
 
 # Grading
 
-Your grade for each project will fall into one of three categories:
+Your grade for each project will fall into one of four categories:
 
 | Grade Level         | Explanation |
 | :------------------ |:----------- |
