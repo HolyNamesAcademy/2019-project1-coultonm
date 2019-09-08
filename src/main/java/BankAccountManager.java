@@ -19,7 +19,7 @@ public class BankAccountManager {
         {
             // Give user the options and ask for a command
             System.out.println("List of Possible Commands:");
-            System.out.println("SeeBalance");
+            System.out.println("Balance");
             System.out.println("Deposit <amount>");
             System.out.println("Withdraw <amount>");
             System.out.println("AddInterest <num years> <interest>");
@@ -59,15 +59,18 @@ public class BankAccountManager {
         }
     }
 
-    /*
-    Prints the account information like this:
-
-    Name: Serena Williams
-    Account Balance: 1000000.00
+    /**
+     * Returns a string representation of a BankAccount object. The string looks like this:
+     * 
+     *      Name: Serena Williams
+     *      Account Balance: 1000000.00
+     * 
+     * @return String
      */
     public static void PrintAccountInfo(BankAccount account)
     {
-        // write your code here
 
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 }

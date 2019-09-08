@@ -3,84 +3,121 @@ public class BankAccount {
     private String name;
     private double accountBalance;
 
-    /*
-    Initialize the bank account.
-     */
-    public BankAccount(String in_name, double in_accountBalance)
+    /**
+     * Initializes a new BankAccount.
+     *
+     * @param in_name The name of the account owner.
+     * @param in_accountBalance The starting balance for the account.
+     */    public BankAccount(String in_name, double in_accountBalance)
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /*
-    Returns the name of the account owner.
-    */
+    /**
+     * @return The name of the account owner.
+     */
     public String GetName()
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /*
-    Returns the balance in the account.
+    /**
+     * @return The current account balance.
      */
     public double GetBalance()
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /*
-    Deposits money to the account. The user can deposit any positive amount of money.
-    If the number is not positive, the function does nothing except printing the following string:
-
-    "Sorry, the amount deposited must be greater than 0."
-
-    Returns the amount deposited. If there is an error, the amount deposited is 0.
+    /**
+     * Deposits money into the account.
+     * If the requested deposit amount is not a positive number, the account balance is unchanged
+     * and the following error message is displayed to the user :
+     *
+     *   "Sorry, the amount deposited must be greater than 0."
+     *
+     * @param amount The amount to deposit into the account. Must be a positive number.
+     * @return The amount deposited into the account. If no money could be deposited due to an error, return zero.
      */
     public double Deposit(double amount)
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /*
-    Withdraw money from the account. The user must withdraw a positive amount of money,
-    AND the user cannot withdraw more money than the account balance (the user can't
-    withdraw more money than he has. Here are the error messages the function can print:
-
-    "Sorry, the amount withdrawn must be greater than 0."
-    "Sorry, you cannot withdraw more than the account balance."
-
-    Returns the amount withdrawn. If there is an error, the amount withdrawn is 0.
+    /**
+     * Withdraws money from the account. The user must withdraw a positive amount of money,
+     * AND the user cannot withdraw more money than the current account balance, i.e. the user
+     * cannot withdraw more money than they have. One of the following error messages is displayed
+     * to the user, depending on the error reason:
+     *
+     *   "Sorry, the amount withdrawn must be greater than 0."
+     *   "Sorry, you cannot withdraw more than the account balance."
+     *
+     * @param amount The amount to withdraw from the account. Must be a positive number.
+     * @return The amount withdrawn from the account. If the requested amount could not be withdrawn due to an error,
+     *   returns zero.
      */
     public double Withdraw(double amount)
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /*
-    When money sits in a bank account, it accumulates interest. This function adds interest
-    to the account balance.
-
-    Interest added = account balance * number of years * interest rate
-
-    Error messages:
-    "Sorry, the number of years must be an integer greater than 0."
-    "Sorry, the interest rate must be greater than 0."
-    Returns the amount of interest added. If there is an error, the amount added is 0.
+    /**
+     * Computes interest for the bank account and adds it to the balance.
+     *
+     * Interest added = account balance * number of years * interest rate
+     *
+     * Error messages:
+     *   "Sorry, the number of years must be an integer greater than 0."
+     *   "Sorry, the interest rate must be greater than 0."
+     *
+     * @param numYears The number of years to compute interest for. Must be a positive number.
+     * @param interestRate The rate at which the account balance accumulates interest. Must be a positive number.
+     * @return The amount of interest computed. If there is an error, returns zero.
      */
     public double AddInterest(int numYears, double interestRate)
     {
-        // write your code here
+
+        // write your code above and remove the line below
         throw new UnsupportedOperationException();
     }
 
-    /* Returns true if two bank accounts are "equal". For our purposes,
-    they are equal if the names and the balances are the same.
+    /**
+     * Returns a string representation of a BankAccount object. The string looks like this:
+     * 
+     *      Name: Serena Williams
+     *      Account Balance: 1000000.00
+     * 
+     * @return String
      */
-    public boolean equals(Object other) {
+    public String toString()
+    {
+
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * NOTE: This is implemented for you. You do not have to implement this function.
+     *
+     * Compares two BankAccount objects. One BankAccount is considered to be equal to another if
+     * their account owners and account balances are the same.
+     *
+     * @param other The BankAccount object to compare to this one.
+     * @return true if the BankAccount objects are equal. Otherwise, false.
+     */
+    public boolean equals(Object other) 
+    {
         // If points to the same object, return true
         if (other == this) {
             return true;

@@ -116,13 +116,13 @@ public class ArrayListPracticeTest {
 
 
     @Test
-    public void GetStudentWithFavoriteColor() {
+    public void GetFirstStudentWithFavoriteColor() {
         // Arrange
         ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
         Student expectedStudent = students.get(2);
 
         // Act
-        Student actualStudent = ArrayListPractice.GetStudentWithFavoriteColor(students, "yellow");
+        Student actualStudent = ArrayListPractice.GetFirstStudentWithFavoriteColor(students, "yellow");
 
         // Assert
         assertEquals(expectedStudent, actualStudent);
@@ -189,16 +189,14 @@ public class ArrayListPracticeTest {
     public void GetTeamsString() {
         // Arrange
         ArrayList<ArrayList<Student>> teams = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
-            ArrayList<Student> team = ArrayListPracticeMain.CreateStudentArrayListNoBankAccount();
-            teams.add(team);
-        }
-        String expected =
-               "Team 1: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 2: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 3: Emily, Joshua, Jessica, Michael, Daniel, Madison\n" +
-               "Team 4: Emily, Joshua, Jessica, Michael, Daniel, Madison\n";
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Emily", "Madison"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Jessica", "Joshua", "Daniel"}));
+        teams.add(ArrayListPracticeMain.CreateStudentArrayListNoBankAccount(new String[]{"Michael"}));
 
+        String expected =
+               "Team 1: Emily, Madison\n" +
+               "Team 2: Jessica, Joshua, Daniel\n" +
+               "Team 3: Michael\n";
 
         // Act
         String actual = ArrayListPractice.GetTeamsString(teams);
@@ -257,6 +255,46 @@ public class ArrayListPracticeTest {
         // Assert
         assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
         assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
+
+    @Test
+    public void TransferMoneyNegativeAmount() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Madison", -10);
+
+        // Assert
+        assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
+        assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
+
+    @Test
+    public void TransferMoneyNonExistentStudent() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Joe", "Madison", 10);
+
+        // Assert
+        assertEquals(110, students.get(5).GetBankAccount().GetBalance(), 0.1);
+        assertFalse(output);
+    }
+
+    @Test
+    public void TransferMoneyNonExistentStudent2() {
+        // Arrange
+        ArrayList<Student> students = ArrayListPracticeMain.CreateStudentArrayList();
+
+        // Act
+        boolean output = ArrayListPractice.TransferMoney(students, "Michael", "Joe", 10);
+
+        // Assert
+        assertEquals(50, students.get(3).GetBankAccount().GetBalance(), 0.1);
         assertFalse(output);
     }
 }

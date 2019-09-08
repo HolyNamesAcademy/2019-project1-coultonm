@@ -1,13 +1,19 @@
 import java.util.Scanner;
 
 public class Shapes {
+
+    /**
+     * Runs the ShapeMaker program
+     */
     public static void Run() {
+        // Get desired length and height from user
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a length: ");
         int length = scanner.nextInt();
         System.out.print("Enter a height: ");
         int height = scanner.nextInt();
 
+        // Print shapes
         System.out.println("Square:");
         System.out.println(ShapeMaker.PrintSquare(length));
 
