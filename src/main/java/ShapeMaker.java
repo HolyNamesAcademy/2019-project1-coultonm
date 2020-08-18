@@ -14,17 +14,7 @@ public class ShapeMaker {
      */
     public static String PrintSquare(int size)
     {
-        String output = "";
-        for (int i = 0; i < size; i++)
-        {
-            for (int j = 0; j < size; j++)
-            {
-                output += "* ";
-            }
-            output += "\n";
-        }
-
-        return output;
+        return "";
     }
 
     /**
