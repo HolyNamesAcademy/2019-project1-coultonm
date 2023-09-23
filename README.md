@@ -1,5 +1,21 @@
 # Project: Review
 
+## Table of Contents
+
+- [Project: Review](#project-review)
+  - [Table of Contents](#table-of-contents)
+  - [Good work pledge](#good-work-pledge)
+  - [Getting started](#getting-started)
+  - [The Project](#the-project)
+    - [ShapeMaker](#shapemaker)
+    - [BankAccountManager](#bankaccountmanager)
+    - [ArrayListPractice](#arraylistpractice)
+  - [Unit Tests](#unit-tests)
+  - [Bonus Assignment](#bonus-assignment)
+  - [A Note About Extra Credit and Bonus Assignments](#a-note-about-extra-credit-and-bonus-assignments)
+  - [Committing your Changes and Turning In The Project](#committing-your-changes-and-turning-in-the-project)
+  - [Grading](#grading)
+
 ## Good work pledge
 
 We are here to broaden your exposure to Computer Science. We can only achieve that purpose when you work hard and honestly. It may be tempting to copy-paste code from a classmate, or let a classmate do all your work for you—don't! You will be cheating yourself from the most valuable thing course has to offer—overcoming challenges.
@@ -29,7 +45,7 @@ This project has three parts:
 2. **BankAccountManager**: The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account. This part will be a good exercise to review constructors, member variables, and other things about classes.
 3. **ArrayListPractice**: In ArrayListPractice, you will implement several functions that involve working with ArrayLists. In some of the functions, the ArrayLists will contain integers, and in others, the ArrayLists will contain _Student_ objects, where _Student_ is a class that represents a student. This section will be good practice for working with ArrayLists and clases/objects.
 
-## ShapeMaker
+### ShapeMaker
 
 In order to run ShapeMaker, click on the dropdown next to the play button in the top right, select "Main", and at the prompt, type "s". Since none of the functions have been implemented yet, the program will print nothing. That's okay, though! You shouldn't have hit any compile errors, and that means you are in the perfect place to start.
 
@@ -39,7 +55,7 @@ Start by implementing the first function. Then hit play and see the program run,
 
 **Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
 
-## BankAccountManager
+### BankAccountManager
 
 The BankAccountManager is a command line application that allows you to maintain a bank account. First you set up the bank account with a name and a starting balance. After that, it continuously asks the user for a command. It can take several commands:
 
@@ -55,7 +71,7 @@ Your job is to implement the BankAccount class so that it keeps track of the nam
 
 You can test your BankAccount class using the BankAccountManager configuration in the dropdown next to the play button.
 
-## ArrayListPractice
+### ArrayListPractice
 
 The functions needed to be implemented are in the ArrayListPractice class. ArrayListPractice is similar to ShapeMaker in that all of the functions are static, standalone functions. You don't need to implement one function for another to work.
 
